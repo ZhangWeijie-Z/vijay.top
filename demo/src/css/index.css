@@ -1,0 +1,305 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+li {
+	list-style: none;
+}
+#app {
+	width: 900px;
+	height: 650px;
+	margin: 80px auto;
+	box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.2);
+}
+#header {
+	width: 100%;
+	height: 60px;
+	border: 1px solid #ccc;
+	background-color: #ec4141;
+}
+.logo {
+	float: left;
+	margin: 15px 35px;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+}
+.search {
+	position: relative;
+	float: right;
+	margin: 9px 25px;
+}
+.search input {
+	width: 200px;
+	height: 40px;
+	border-radius: 25px;
+	border: none;
+	outline: none;
+	text-indent: 15px;
+	font-size: 18px;
+	color: rgb(255, 255, 255);
+	background-color: rgba(250, 250, 250, 0.5);
+	transition: all 0.5s;
+}
+.search input:focus {
+	width: 300px;
+	color: rgb(75, 75, 75);
+	background-color: rgba(250, 250, 250, 0.8);
+	box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+	transition: all 0.5s;
+}
+.search-ico {
+	position: absolute;
+	top: 5px;
+	right: 8px;
+	width: 30px;
+	height: 30px;
+	background: url('../images/search.png');
+	background-size: 100%;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+.search-ico:hover {
+	background: url('../images/search-hover.png');
+	background-size: 100%;
+	transition: all 0.5s;
+}
+#content {
+	display: flex;
+	width: 100%;
+	height: 540px;
+}
+.content-left {
+	flex: 2.5;
+	border-right: solid 2px #ccc;
+	border-image: linear-gradient(transparent, #ccc, transparent) 5 5;
+	overflow: auto;
+}
+.content-left::-webkit-scrollbar {
+	width: 1px;
+}
+.content-left li {
+	display: flex;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 2px;
+	list-style: none;
+	border-radius: 8px;
+	font-size: 14px;
+	transition: all 0.3s;
+	cursor: pointer;
+	-moz-user-select: none; /*火狐*/
+	-webkit-user-select: none; /*webkit浏览器*/
+	-ms-user-select: none; /*IE10*/
+	-khtml-user-select: none; /*早期浏览器*/
+	user-select: none;
+}
+.content-left li:hover {
+	background-color: rgb(230, 230, 230);
+}
+.content-left li a {
+	flex: 2;
+}
+.content-left li a:nth-child(3) {
+	margin-right: 12px;
+}
+.content-left a img {
+	width: 50%;
+	margin: 10px 20px;
+}
+.content-left li span {
+	flex: 8;
+	margin-left: 10px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.content-img {
+	flex: 5;
+	position: relative;
+}
+.content-right {
+	flex: 2.5;
+	border-left: solid 2px #ccc;
+	border-image: linear-gradient(transparent, #ccc, transparent) 5 5;
+	overflow: auto;
+	font-size: 14px;
+}
+.content-right::-webkit-scrollbar {
+	width: 1px;
+}
+.content-right span {
+	display: block;
+	margin: 4px 0;
+}
+.content-img input {
+	float: right;
+	margin: 10px;
+	padding: 5px;
+	border: 1px solid #ec4141;
+	border-radius: 5px;
+	background-color: #fff;
+	color: #ec4141;
+	transition: all 0.3s;
+}
+.content-img input:hover {
+	background-color: #ec4141;
+	color: #fff;
+	cursor: pointer;
+}
+.content-img .music-img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	max-width: 200px;
+	border-radius: 500px;
+}
+.content-img .play-img {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 70%;
+}
+.content-p p {
+	margin-top: -88px;
+	font-size: 26px;
+	text-align: center;
+}
+.content li {
+	margin-top: 5px;
+	width: 199px;
+}
+.content a img {
+	float: left;
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+	margin-top: 20px;
+}
+.nickname {
+	width: 73px;
+	height: 21px;
+	font-size: 16px;
+	font-weight: bold;
+	word-break: break-word;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin-top: 14px;
+}
+.content-con {
+	word-break: break-word;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-top: -10px;
+	padding-left: 14px;
+}
+#footer {
+	width: 100%;
+	height: 47px;
+	background-color: #f1f3f4;
+}
+.footer-audio {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}
+
+.play-1 {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+@keyframes Rotate {
+	from {
+		transform: rotateZ(0);
+	}
+	to {
+		transform: rotateZ(360deg);
+	}
+}
+/* 旋转的类名 */
+.autoRotate {
+	animation-name: Rotate;
+	animation-iteration-count: infinite;
+	animation-play-state: paused;
+	animation-timing-function: linear;
+	animation-duration: 10s;
+}
+/* 是否正在播放 */
+.player_con.playing .disc,
+.player_con.playing .cover {
+	animation-play-state: running;
+}
+.player-bar {
+	width: 30%;
+	position: absolute;
+	top: -10px;
+	left: 200px;
+	z-index: 1;
+	transform: rotate(-35deg);
+	transform-origin: 12px 12px;
+	transition: 1s;
+}
+.player_con.playing .player-bar {
+	transform: rotate(5deg);
+}
+#video {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+	cursor: pointer;
+	z-index: 10;
+}
+.video-mv {
+	border-radius: 15px;
+	width: 70%;
+	height: 70%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	background-color: #fff;
+}
+.video-mv p {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 32px;
+	position: absolute;
+	top: -40px;
+	right: -40px;
+	background-color: #fff;
+	z-index: 999;
+	border-radius: 20px;
+	transition: all 0.5s;
+}
+.video-mv p:hover {
+	font-size: 30px;
+	border-radius: 30px;
+}
+.video-mv video {
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ZhangWeijie</title>
+		<link rel="stylesheet" href="./src/css/index.css" />
+		<link rel="shortcut icon" href="#" />
+	</head>
+	<body>
+		<div id="app">
+			<div id="header">
+				<div class="logo">
+					<h2>ZhangWeijie</h2>
+				</div>
+				<div class="search">
+					<input type="text" v-model="select" @keyup.enter="searchMusic" />
+					<span class="search-ico" @click="searchMusic"></span>
+				</div>
+			</div>
+			<div id="content">
+				<div class="content-left">
+					<ul>
+						<li v-for="item in musicList" v-on:dblclick="playMusic(item.id)">
+							<a @click="playMusic(item.id)" title="点击播放">
+								<img src="./src/images/play.png" alt="" />
+							</a>
+							<span>{{ item.name}} - {{item.artists[0].name}}</span>
+							<a v-if="item.mvid!=0" @click="playMv(item.mvid)">
+								<img src="./src/images/musicvideo.png" alt="" />
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="content-img">
+					<input type="button" :value="value" @click="change" v-show="btnShow" />
+					<div class="play-1 player_con" :class="{playing:isPlaying}">
+						<img src="./src/images/player-bar.png" class="player-bar disc" />
+						<a href="javascript:;">
+							<img :src="musicImg" class="music-img disc autoRotate" />
+						</a>
+						<img src="./src/images/player.png" class="play-img" />
+					</div>
+					<div class="content-p">
+						<p>{{musicName + '-'}}{{singsName}}</p>
+					</div>
+				</div>
+				<div class="content-right">
+					<span v-for="item in musicLyrics" v-show="lyrShow">{{ item.toString().substring(10,)}}</span>
+					<div class="content" v-show="comShow">
+						<h3>热门评论</h3>
+						<ul>
+							<li v-for="item in commentList ">
+								<a>
+									<img :src="item.user.avatarUrl" alt="" />
+								</a>
+								<div class="nickname">{{item.user.nickname}}</div>
+								<br />
+								<p class="content-con">{{item.content}}</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="footer">
+				<audio ref="audio" @play="play" @pause="pause" :src="musicUrl" controls autoplay loop class="footer-audio"></audio>
+			</div>
+			<div id="video" v-show="mvShow">
+				<div class="video-mv">
+					<p @click="changeMv">X</p>
+					<video ref="video" :src="mvUrl" controls autoplay loop></video>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.1/axios.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script src="./src/js/index.js"></script>
+	</body>
+</html>
