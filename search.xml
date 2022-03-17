@@ -1,38 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Linux基本命令</title>
-    <url>/2021/06/14/02_Linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<h1 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h1><h2 id="1-cd-进入目录"><a href="#1-cd-进入目录" class="headerlink" title="1. cd 进入目录"></a>1. cd 进入目录</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">cd /root/Docements # 切换到目录/root/Docements</span><br><span class="line">cd ./path          # 切换到当前目录下的path目录中，“.”表示当前目录  </span><br><span class="line">cd ../path         # 切换到上层目录中的path目录中，“..”表示上一层目录</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-ls-展示文件夹内容"><a href="#2-ls-展示文件夹内容" class="headerlink" title="2. ls 展示文件夹内容"></a>2. ls 展示文件夹内容</h2><span id="more"></span>
-
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">-a ：全部的档案，连同隐藏档( 开头为 . 的档案) 一起列出来～ </span><br><span class="line">-A ：全部的档案，连同隐藏档，但不包括 . 与 .. 这两个目录，一起列出来～ </span><br><span class="line">-d ：仅列出目录本身，而不是列出目录内的档案数据 </span><br><span class="line">-f ：直接列出结果，而不进行排序 (ls 预设会以档名排序！) </span><br><span class="line">-F ：根据档案、目录等信息，给予附加数据结构，例如： </span><br><span class="line">*：代表可执行档； /：代表目录； =：代表 socket 档案； |：代表 FIFO 档案； </span><br><span class="line">-h ：将档案容量以人类较易读的方式(例如 GB, KB 等等)列出来； </span><br><span class="line">-i ：列出 inode 位置，而非列出档案属性； </span><br><span class="line">-l ：长数据串行出，包含档案的属性等等数据； </span><br><span class="line">-n ：列出 UID 与 GID 而非使用者与群组的名称 (UID与GID会在账号管理提到！) </span><br><span class="line">-r ：将排序结果反向输出，例如：原本档名由小到大，反向则为由大到小； </span><br><span class="line">-R ：连同子目录内容一起列出来； </span><br><span class="line">-S ：以档案容量大小排序！ </span><br><span class="line">-t ：依时间排序 </span><br><span class="line">--color=never ：不要依据档案特性给予颜色显示； </span><br><span class="line">--color=always ：显示颜色 </span><br><span class="line">--color=auto ：让系统自行依据设定来判断是否给予颜色 </span><br><span class="line">--full-time ：以完整时间模式 (包含年、月、日、时、分) 输出 </span><br><span class="line">--time=&#123;atime,ctime&#125; ：输出 access 时间或 改变权限属性时间 (ctime) </span><br><span class="line">而非内容变更时间 (modification time)     例如：ls [-aAdfFhilRS] 目录名称 ls [--color=&#123;none,auto,always&#125;] 目录名称 ls [--full-time] 目录名称</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-cp-复制目录"><a href="#3-cp-复制目录" class="headerlink" title="3. cp 复制目录"></a>3. cp 复制目录</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">-a ：将文件的特性一起复制</span><br><span class="line">-p ：连同文件的属性一起复制，而非使用默认方式，与-a相似，常用于备份</span><br><span class="line">-i ：若目标文件已经存在时，在覆盖时会先询问操作的进行</span><br><span class="line">-r ：递归持续复制，用于目录的复制行为</span><br><span class="line">-u ：目标文件与源文件有差异时才会复制</span><br></pre></td></tr></table></figure>
-
-<h2 id="4-rm-删除"><a href="#4-rm-删除" class="headerlink" title="4. rm 删除"></a>4. rm 删除</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">-f ：就是force的意思，忽略不存在的文件，不会出现警告消息</span><br><span class="line">-i ：互动模式，在删除前会询问用户是否操作</span><br><span class="line">-r ：递归删除，最常用于目录删除，它是一个非常危险的参数</span><br></pre></td></tr></table></figure>
-
-<h2 id="5-mv-移动文件"><a href="#5-mv-移动文件" class="headerlink" title="5. mv 移动文件"></a>5. mv 移动文件</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">-f ：force强制的意思，如果目标文件已经存在，不会询问而直接覆盖</span><br><span class="line">-i ：若目标文件已经存在，就会询问是否覆盖</span><br><span class="line">-u ：若目标文件已经存在，且比目标文件新，才会更新</span><br></pre></td></tr></table></figure>
-
-<h2 id="6-mkdir-创建目录"><a href="#6-mkdir-创建目录" class="headerlink" title="6. mkdir 创建目录"></a>6. mkdir 创建目录</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">mkdir [选项]... 目录... </span><br><span class="line"> -m, --mode=模式，设定权限&lt;模式&gt; (类似 chmod)，而不是 rwxrwxrwx 减 umask</span><br><span class="line"> -p, --parents  可以是一个路径名称。此时若路径中的某些目录尚不存在,加上此选项后,系统将自动建立好那些尚不存在的目录,即一次可以建立多个目录; </span><br><span class="line"> -v, --verbose  每次创建新目录都显示信息</span><br></pre></td></tr></table></figure>
-
-<h2 id="7-rmdir-删除目录"><a href="#7-rmdir-删除目录" class="headerlink" title="7. rmdir 删除目录"></a>7. rmdir 删除目录</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">rmdir [选项]... 目录...</span><br><span class="line">-p 递归删除目录dirname，当子目录删除后其父目录为空时，也一同被删除。如果整个路径被删除或者由于某种原因保留部分路径，则系统在标准输出上显示相应的信息。 </span><br><span class="line">-v --verbose  显示指令执行过程 </span><br></pre></td></tr></table></figure>
-
-<h1 id="进程相关命令"><a href="#进程相关命令" class="headerlink" title="进程相关命令"></a>进程相关命令</h1><h2 id="8-ps-显示进程"><a href="#8-ps-显示进程" class="headerlink" title="8. ps 显示进程"></a>8. ps 显示进程</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">-A ：所有的进程均显示出来</span><br><span class="line">-a ：不与terminal有关的所有进程</span><br><span class="line">-u ：有效用户的相关进程</span><br><span class="line">-x ：一般与a参数一起使用，可列出较完整的信息</span><br><span class="line">-l ：较长，较详细地将PID的信息列出</span><br></pre></td></tr></table></figure>
-
-<h2 id="9-kill-结束进程"><a href="#9-kill-结束进程" class="headerlink" title="9. kill 结束进程"></a>9. kill 结束进程</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">kill -signal PID</span><br><span class="line"><span class="number">1</span>：SIGHUP，启动被终止的进程</span><br><span class="line"><span class="number">2</span>：SIGINT，相当于输入ctrl+c，中断一个程序的进行</span><br><span class="line"><span class="number">9</span>：SIGKILL，强制中断一个进程的进行</span><br><span class="line"><span class="number">15</span>：SIGTERM，以正常的结束进程方式来终止进程</span><br><span class="line"><span class="number">17</span>：SIGSTOP，相当于输入ctrl+z，暂停一个进程的进行</span><br></pre></td></tr></table></figure>
-
-<h2 id="10-free-显示Linux系统中空闲的、已用的物理内存及swap内存-及被内核使用的buffer"><a href="#10-free-显示Linux系统中空闲的、已用的物理内存及swap内存-及被内核使用的buffer" class="headerlink" title="10. free 显示Linux系统中空闲的、已用的物理内存及swap内存,及被内核使用的buffer"></a>10. free 显示Linux系统中空闲的、已用的物理内存及swap内存,及被内核使用的buffer</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">free [参数]</span><br><span class="line">-b 　以Byte为单位显示内存使用情况。 </span><br><span class="line">-k 　以KB为单位显示内存使用情况。 </span><br><span class="line">-m 　以MB为单位显示内存使用情况。</span><br><span class="line">-g   以GB为单位显示内存使用情况。 </span><br><span class="line">-o 　不显示缓冲区调节列。 </span><br><span class="line">-s&lt;间隔秒数&gt; 　持续观察内存使用状况。 </span><br><span class="line">-t 　显示内存总和列。 </span><br><span class="line">-V 　显示版本信息。</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>github获取git密钥</title>
     <url>/2021/06/10/01_github%E8%8E%B7%E5%8F%96%E5%AF%86%E9%92%A5/</url>
     <content><![CDATA[<h2 id="bash里输入命令"><a href="#bash里输入命令" class="headerlink" title="bash里输入命令"></a>bash里输入命令</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t ed25519 -C <span class="string">&quot;你的邮箱&quot;</span></span><br></pre></td></tr></table></figure>
@@ -114,6 +82,106 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ssh远程连接服务器</title>
+    <url>/2021/06/22/03_ssh%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E6%9C%8D%E5%8A%A1%E5%99%A8/</url>
+    <content><![CDATA[<h2 id="打开本地终端-输入"><a href="#打开本地终端-输入" class="headerlink" title="打开本地终端 输入"></a>打开本地终端 输入</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">ssh root@你的ip</span><br></pre></td></tr></table></figure>
+
+<h2 id="指定ip连接"><a href="#指定ip连接" class="headerlink" title="指定ip连接"></a>指定ip连接</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">cd .ssh</span><br><span class="line"></span><br><span class="line">ssh -i .\myKye(密钥地址) root@你的ip</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>ssh</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2021/05/10/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<span id="more"></span>
+
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Linux基本命令</title>
+    <url>/2021/06/14/02_Linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<h1 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h1><h2 id="1-cd-进入目录"><a href="#1-cd-进入目录" class="headerlink" title="1. cd 进入目录"></a>1. cd 进入目录</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">cd /root/Docements # 切换到目录/root/Docements</span><br><span class="line">cd ./path          # 切换到当前目录下的path目录中，“.”表示当前目录  </span><br><span class="line">cd ../path         # 切换到上层目录中的path目录中，“..”表示上一层目录</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-ls-展示文件夹内容"><a href="#2-ls-展示文件夹内容" class="headerlink" title="2. ls 展示文件夹内容"></a>2. ls 展示文件夹内容</h2><span id="more"></span>
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">-a ：全部的档案，连同隐藏档( 开头为 . 的档案) 一起列出来～ </span><br><span class="line">-A ：全部的档案，连同隐藏档，但不包括 . 与 .. 这两个目录，一起列出来～ </span><br><span class="line">-d ：仅列出目录本身，而不是列出目录内的档案数据 </span><br><span class="line">-f ：直接列出结果，而不进行排序 (ls 预设会以档名排序！) </span><br><span class="line">-F ：根据档案、目录等信息，给予附加数据结构，例如： </span><br><span class="line">*：代表可执行档； /：代表目录； =：代表 socket 档案； |：代表 FIFO 档案； </span><br><span class="line">-h ：将档案容量以人类较易读的方式(例如 GB, KB 等等)列出来； </span><br><span class="line">-i ：列出 inode 位置，而非列出档案属性； </span><br><span class="line">-l ：长数据串行出，包含档案的属性等等数据； </span><br><span class="line">-n ：列出 UID 与 GID 而非使用者与群组的名称 (UID与GID会在账号管理提到！) </span><br><span class="line">-r ：将排序结果反向输出，例如：原本档名由小到大，反向则为由大到小； </span><br><span class="line">-R ：连同子目录内容一起列出来； </span><br><span class="line">-S ：以档案容量大小排序！ </span><br><span class="line">-t ：依时间排序 </span><br><span class="line">--color=never ：不要依据档案特性给予颜色显示； </span><br><span class="line">--color=always ：显示颜色 </span><br><span class="line">--color=auto ：让系统自行依据设定来判断是否给予颜色 </span><br><span class="line">--full-time ：以完整时间模式 (包含年、月、日、时、分) 输出 </span><br><span class="line">--time=&#123;atime,ctime&#125; ：输出 access 时间或 改变权限属性时间 (ctime) </span><br><span class="line">而非内容变更时间 (modification time)     例如：ls [-aAdfFhilRS] 目录名称 ls [--color=&#123;none,auto,always&#125;] 目录名称 ls [--full-time] 目录名称</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-cp-复制目录"><a href="#3-cp-复制目录" class="headerlink" title="3. cp 复制目录"></a>3. cp 复制目录</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">-a ：将文件的特性一起复制</span><br><span class="line">-p ：连同文件的属性一起复制，而非使用默认方式，与-a相似，常用于备份</span><br><span class="line">-i ：若目标文件已经存在时，在覆盖时会先询问操作的进行</span><br><span class="line">-r ：递归持续复制，用于目录的复制行为</span><br><span class="line">-u ：目标文件与源文件有差异时才会复制</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-rm-删除"><a href="#4-rm-删除" class="headerlink" title="4. rm 删除"></a>4. rm 删除</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">-f ：就是force的意思，忽略不存在的文件，不会出现警告消息</span><br><span class="line">-i ：互动模式，在删除前会询问用户是否操作</span><br><span class="line">-r ：递归删除，最常用于目录删除，它是一个非常危险的参数</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-mv-移动文件"><a href="#5-mv-移动文件" class="headerlink" title="5. mv 移动文件"></a>5. mv 移动文件</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">-f ：force强制的意思，如果目标文件已经存在，不会询问而直接覆盖</span><br><span class="line">-i ：若目标文件已经存在，就会询问是否覆盖</span><br><span class="line">-u ：若目标文件已经存在，且比目标文件新，才会更新</span><br></pre></td></tr></table></figure>
+
+<h2 id="6-mkdir-创建目录"><a href="#6-mkdir-创建目录" class="headerlink" title="6. mkdir 创建目录"></a>6. mkdir 创建目录</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">mkdir [选项]... 目录... </span><br><span class="line"> -m, --mode=模式，设定权限&lt;模式&gt; (类似 chmod)，而不是 rwxrwxrwx 减 umask</span><br><span class="line"> -p, --parents  可以是一个路径名称。此时若路径中的某些目录尚不存在,加上此选项后,系统将自动建立好那些尚不存在的目录,即一次可以建立多个目录; </span><br><span class="line"> -v, --verbose  每次创建新目录都显示信息</span><br></pre></td></tr></table></figure>
+
+<h2 id="7-rmdir-删除目录"><a href="#7-rmdir-删除目录" class="headerlink" title="7. rmdir 删除目录"></a>7. rmdir 删除目录</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">rmdir [选项]... 目录...</span><br><span class="line">-p 递归删除目录dirname，当子目录删除后其父目录为空时，也一同被删除。如果整个路径被删除或者由于某种原因保留部分路径，则系统在标准输出上显示相应的信息。 </span><br><span class="line">-v --verbose  显示指令执行过程 </span><br></pre></td></tr></table></figure>
+
+<h1 id="进程相关命令"><a href="#进程相关命令" class="headerlink" title="进程相关命令"></a>进程相关命令</h1><h2 id="8-ps-显示进程"><a href="#8-ps-显示进程" class="headerlink" title="8. ps 显示进程"></a>8. ps 显示进程</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">-A ：所有的进程均显示出来</span><br><span class="line">-a ：不与terminal有关的所有进程</span><br><span class="line">-u ：有效用户的相关进程</span><br><span class="line">-x ：一般与a参数一起使用，可列出较完整的信息</span><br><span class="line">-l ：较长，较详细地将PID的信息列出</span><br></pre></td></tr></table></figure>
+
+<h2 id="9-kill-结束进程"><a href="#9-kill-结束进程" class="headerlink" title="9. kill 结束进程"></a>9. kill 结束进程</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">kill -signal PID</span><br><span class="line"><span class="number">1</span>：SIGHUP，启动被终止的进程</span><br><span class="line"><span class="number">2</span>：SIGINT，相当于输入ctrl+c，中断一个程序的进行</span><br><span class="line"><span class="number">9</span>：SIGKILL，强制中断一个进程的进行</span><br><span class="line"><span class="number">15</span>：SIGTERM，以正常的结束进程方式来终止进程</span><br><span class="line"><span class="number">17</span>：SIGSTOP，相当于输入ctrl+z，暂停一个进程的进行</span><br></pre></td></tr></table></figure>
+
+<h2 id="10-free-显示Linux系统中空闲的、已用的物理内存及swap内存-及被内核使用的buffer"><a href="#10-free-显示Linux系统中空闲的、已用的物理内存及swap内存-及被内核使用的buffer" class="headerlink" title="10. free 显示Linux系统中空闲的、已用的物理内存及swap内存,及被内核使用的buffer"></a>10. free 显示Linux系统中空闲的、已用的物理内存及swap内存,及被内核使用的buffer</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">free [参数]</span><br><span class="line">-b 　以Byte为单位显示内存使用情况。 </span><br><span class="line">-k 　以KB为单位显示内存使用情况。 </span><br><span class="line">-m 　以MB为单位显示内存使用情况。</span><br><span class="line">-g   以GB为单位显示内存使用情况。 </span><br><span class="line">-o 　不显示缓冲区调节列。 </span><br><span class="line">-s&lt;间隔秒数&gt; 　持续观察内存使用状况。 </span><br><span class="line">-t 　显示内存总和列。 </span><br><span class="line">-V 　显示版本信息。</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MarkDown语法</title>
+    <url>/2021/05/11/MarkDown%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><ul>
+<li>列表<br>  子列表</li>
+<li>列表</li>
+</ul>
+<span id="more"></span>
+
+<p><em>斜线字体</em></p>
+<p><strong>字体加粗</strong></p>
+<blockquote>
+<p>引用内容</p>
+</blockquote>
+<center>这一行需要居中</center>
+
+<hr>
+<hr>
+<p><code>&lt;html&gt;代码块&lt;/html&gt;</code></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">    <span class="xml"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span></span><br><span class="line">    <span class="xml"><span class="tag">&lt;<span class="name">body</span>&gt;</span><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>超链接文字<br><a href="https://github.com/ZhangWeijie-Z">我的github地址</a></p>
+</li>
+<li><p>插入图片<br><img src="http://img.doutula.com/production/uploads/image/2021/05/11/20210511698702_QRjahM.gif" alt="插入图片"></p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>MarkDown</tag>
       </tags>
   </entry>
   <entry>
@@ -323,61 +391,6 @@
       </categories>
       <tags>
         <tag>Vue2</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2021/05/10/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<span id="more"></span>
-
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>MarkDown语法</title>
-    <url>/2021/05/11/MarkDown%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><ul>
-<li>列表<br>  子列表</li>
-<li>列表</li>
-</ul>
-<span id="more"></span>
-
-<p><em>斜线字体</em></p>
-<p><strong>字体加粗</strong></p>
-<blockquote>
-<p>引用内容</p>
-</blockquote>
-<center>这一行需要居中</center>
-
-<hr>
-<hr>
-<p><code>&lt;html&gt;代码块&lt;/html&gt;</code></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">    <span class="xml"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span></span><br><span class="line">    <span class="xml"><span class="tag">&lt;<span class="name">body</span>&gt;</span><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p>超链接文字<br><a href="https://github.com/ZhangWeijie-Z">我的github地址</a></p>
-</li>
-<li><p>插入图片<br><img src="http://img.doutula.com/production/uploads/image/2021/05/11/20210511698702_QRjahM.gif" alt="插入图片"></p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>MarkDown</tag>
       </tags>
   </entry>
 </search>

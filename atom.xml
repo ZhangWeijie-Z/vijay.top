@@ -6,7 +6,7 @@
   <link href="https://github.com/ZhangWeijie-Z/atom.xml" rel="self"/>
   
   <link href="https://github.com/ZhangWeijie-Z/"/>
-  <updated>2022-03-16T07:32:17.351Z</updated>
+  <updated>2022-03-16T12:08:51.067Z</updated>
   <id>https://github.com/ZhangWeijie-Z/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ssh远程连接服务器</title>
+    <link href="https://github.com/ZhangWeijie-Z/2021/06/22/03_ssh%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    <id>https://github.com/ZhangWeijie-Z/2021/06/22/03_ssh%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E6%9C%8D%E5%8A%A1%E5%99%A8/</id>
+    <published>2021-06-22T06:22:03.000Z</published>
+    <updated>2022-03-16T12:08:51.067Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="打开本地终端-输入"><a href="#打开本地终端-输入" class="headerlink" title="打开本地终端 输入"></a>打开本地终端 输入</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh root@你的ip</span><br></pre></td></tr></table></figure><h2 id="指定ip连接"><a href="#指定ip连接" class="headerlink" title="指定ip连接"></a>指定ip连接</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd .ssh</span><br><span class="line"></span><br><span class="line">ssh -i .\myKye(密钥地址) root@你的ip</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;打开本地终端-输入&quot;&gt;&lt;a href=&quot;#打开本地终端-输入&quot; class=&quot;headerlink&quot; title=&quot;打开本地终端 输入&quot;&gt;&lt;/a&gt;打开本地终端 输入&lt;/h2&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;</summary>
+      
+    
+    
+    
+    <category term="学习" scheme="https://github.com/ZhangWeijie-Z/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="ssh" scheme="https://github.com/ZhangWeijie-Z/tags/ssh/"/>
+    
+  </entry>
   
   <entry>
     <title>Linux基本命令</title>
