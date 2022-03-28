@@ -20,54 +20,6 @@
       </tags>
   </entry>
   <entry>
-    <title>ssh远程连接服务器</title>
-    <url>/2021/06/22/03_ssh%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E6%9C%8D%E5%8A%A1%E5%99%A8/</url>
-    <content><![CDATA[<h2 id="打开本地终端-输入"><a href="#打开本地终端-输入" class="headerlink" title="打开本地终端 输入"></a>打开本地终端 输入</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">ssh root@你的ip</span><br></pre></td></tr></table></figure>
-
-<h2 id="指定ip连接"><a href="#指定ip连接" class="headerlink" title="指定ip连接"></a>指定ip连接</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">cd .ssh</span><br><span class="line"></span><br><span class="line">ssh -i .\myKye(密钥地址) root@你的ip</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>ssh</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>MarkDown语法</title>
-    <url>/2021/05/11/MarkDown%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><ul>
-<li>列表<br>  子列表</li>
-<li>列表</li>
-</ul>
-<span id="more"></span>
-
-<p><em>斜线字体</em></p>
-<p><strong>字体加粗</strong></p>
-<blockquote>
-<p>引用内容</p>
-</blockquote>
-<center>这一行需要居中</center>
-
-<hr>
-<hr>
-<p><code>&lt;html&gt;代码块&lt;/html&gt;</code></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">    <span class="xml"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span></span><br><span class="line">    <span class="xml"><span class="tag">&lt;<span class="name">body</span>&gt;</span><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p>超链接文字<br><a href="https://github.com/ZhangWeijie-Z">我的github地址</a></p>
-</li>
-<li><p>插入图片<br><img src="http://img.doutula.com/production/uploads/image/2021/05/11/20210511698702_QRjahM.gif" alt="插入图片"></p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>MarkDown</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Linux基本命令</title>
     <url>/2021/06/14/02_Linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/</url>
     <content><![CDATA[<h1 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h1><h2 id="1-cd-进入目录"><a href="#1-cd-进入目录" class="headerlink" title="1. cd 进入目录"></a>1. cd 进入目录</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">cd /root/Docements # 切换到目录/root/Docements</span><br><span class="line">cd ./path          # 切换到当前目录下的path目录中，“.”表示当前目录  </span><br><span class="line">cd ../path         # 切换到上层目录中的path目录中，“..”表示上一层目录</span><br></pre></td></tr></table></figure>
@@ -97,6 +49,19 @@
       </categories>
       <tags>
         <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ssh远程连接服务器</title>
+    <url>/2021/06/22/03_ssh%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E6%9C%8D%E5%8A%A1%E5%99%A8/</url>
+    <content><![CDATA[<h2 id="打开本地终端-输入"><a href="#打开本地终端-输入" class="headerlink" title="打开本地终端 输入"></a>打开本地终端 输入</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">ssh root@你的ip</span><br></pre></td></tr></table></figure>
+
+<h2 id="指定ip连接"><a href="#指定ip连接" class="headerlink" title="指定ip连接"></a>指定ip连接</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">cd .ssh</span><br><span class="line"></span><br><span class="line">ssh -i .\myKye(密钥地址) root@你的ip</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>ssh</tag>
       </tags>
   </entry>
   <entry>
@@ -183,6 +148,41 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>MarkDown语法</title>
+    <url>/2021/05/11/MarkDown%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><ul>
+<li>列表<br>  子列表</li>
+<li>列表</li>
+</ul>
+<span id="more"></span>
+
+<p><em>斜线字体</em></p>
+<p><strong>字体加粗</strong></p>
+<blockquote>
+<p>引用内容</p>
+</blockquote>
+<center>这一行需要居中</center>
+
+<hr>
+<hr>
+<p><code>&lt;html&gt;代码块&lt;/html&gt;</code></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">    <span class="xml"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span></span><br><span class="line">    <span class="xml"><span class="tag">&lt;<span class="name">body</span>&gt;</span><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>超链接文字<br><a href="https://github.com/ZhangWeijie-Z">我的github地址</a></p>
+</li>
+<li><p>插入图片<br><img src="http://img.doutula.com/production/uploads/image/2021/05/11/20210511698702_QRjahM.gif" alt="插入图片"></p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>MarkDown</tag>
+      </tags>
   </entry>
   <entry>
     <title>Vue2.0基础</title>

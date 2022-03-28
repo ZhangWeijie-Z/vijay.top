@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>ZhangWeiji</title>
+  <title>ZhangWeijie&#39;s blog</title>
   
-  <subtitle>这里是ZhangWeijie的个人博客</subtitle>
-  <link href="https://github.com/ZhangWeijie-Z/atom.xml" rel="self"/>
+  <subtitle>这里是Weijie的个人博客</subtitle>
+  <link href="http://vijay.top/atom.xml" rel="self"/>
   
-  <link href="https://github.com/ZhangWeijie-Z/"/>
+  <link href="http://vijay.top/"/>
   <updated>2022-03-16T12:08:51.067Z</updated>
-  <id>https://github.com/ZhangWeijie-Z/</id>
+  <id>http://vijay.top/</id>
   
   <author>
     <name>ZhangWeijie</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>ssh远程连接服务器</title>
-    <link href="https://github.com/ZhangWeijie-Z/2021/06/22/03_ssh%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    <id>https://github.com/ZhangWeijie-Z/2021/06/22/03_ssh%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E6%9C%8D%E5%8A%A1%E5%99%A8/</id>
+    <link href="http://vijay.top/2021/06/22/03_ssh%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    <id>http://vijay.top/2021/06/22/03_ssh%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E6%9C%8D%E5%8A%A1%E5%99%A8/</id>
     <published>2021-06-22T06:22:03.000Z</published>
     <updated>2022-03-16T12:08:51.067Z</updated>
     
@@ -33,17 +33,17 @@
     
     
     
-    <category term="学习" scheme="https://github.com/ZhangWeijie-Z/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="http://vijay.top/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="ssh" scheme="https://github.com/ZhangWeijie-Z/tags/ssh/"/>
+    <category term="ssh" scheme="http://vijay.top/tags/ssh/"/>
     
   </entry>
   
   <entry>
     <title>Linux基本命令</title>
-    <link href="https://github.com/ZhangWeijie-Z/2021/06/14/02_Linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/"/>
-    <id>https://github.com/ZhangWeijie-Z/2021/06/14/02_Linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/</id>
+    <link href="http://vijay.top/2021/06/14/02_Linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/"/>
+    <id>http://vijay.top/2021/06/14/02_Linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/</id>
     <published>2021-06-14T05:20:15.000Z</published>
     <updated>2022-03-16T07:32:17.351Z</updated>
     
@@ -56,17 +56,17 @@
     
     
     
-    <category term="学习" scheme="https://github.com/ZhangWeijie-Z/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="http://vijay.top/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="Linux" scheme="https://github.com/ZhangWeijie-Z/tags/Linux/"/>
+    <category term="Linux" scheme="http://vijay.top/tags/Linux/"/>
     
   </entry>
   
   <entry>
     <title>github获取git密钥</title>
-    <link href="https://github.com/ZhangWeijie-Z/2021/06/10/01_github%E8%8E%B7%E5%8F%96%E5%AF%86%E9%92%A5/"/>
-    <id>https://github.com/ZhangWeijie-Z/2021/06/10/01_github%E8%8E%B7%E5%8F%96%E5%AF%86%E9%92%A5/</id>
+    <link href="http://vijay.top/2021/06/10/01_github%E8%8E%B7%E5%8F%96%E5%AF%86%E9%92%A5/"/>
+    <id>http://vijay.top/2021/06/10/01_github%E8%8E%B7%E5%8F%96%E5%AF%86%E9%92%A5/</id>
     <published>2021-06-10T01:42:13.000Z</published>
     <updated>2022-03-16T07:21:43.091Z</updated>
     
@@ -80,19 +80,19 @@
     
     
     
-    <category term="学习" scheme="https://github.com/ZhangWeijie-Z/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="http://vijay.top/categories/%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="前端" scheme="https://github.com/ZhangWeijie-Z/categories/%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="http://vijay.top/categories/%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="github" scheme="https://github.com/ZhangWeijie-Z/tags/github/"/>
+    <category term="github" scheme="http://vijay.top/tags/github/"/>
     
   </entry>
   
   <entry>
     <title>Vue2.0基础</title>
-    <link href="https://github.com/ZhangWeijie-Z/2021/05/12/vue2-0%E5%AD%A6%E4%B9%A0/"/>
-    <id>https://github.com/ZhangWeijie-Z/2021/05/12/vue2-0%E5%AD%A6%E4%B9%A0/</id>
+    <link href="http://vijay.top/2021/05/12/vue2-0%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://vijay.top/2021/05/12/vue2-0%E5%AD%A6%E4%B9%A0/</id>
     <published>2021-05-12T07:11:58.000Z</published>
     <updated>2022-03-16T07:17:07.283Z</updated>
     
@@ -105,19 +105,19 @@
     
     
     
-    <category term="学习" scheme="https://github.com/ZhangWeijie-Z/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="http://vijay.top/categories/%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="前端" scheme="https://github.com/ZhangWeijie-Z/categories/%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="http://vijay.top/categories/%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="Vue2" scheme="https://github.com/ZhangWeijie-Z/tags/Vue2/"/>
+    <category term="Vue2" scheme="http://vijay.top/tags/Vue2/"/>
     
   </entry>
   
   <entry>
     <title>MarkDown语法</title>
-    <link href="https://github.com/ZhangWeijie-Z/2021/05/11/MarkDown%E8%AF%AD%E6%B3%95/"/>
-    <id>https://github.com/ZhangWeijie-Z/2021/05/11/MarkDown%E8%AF%AD%E6%B3%95/</id>
+    <link href="http://vijay.top/2021/05/11/MarkDown%E8%AF%AD%E6%B3%95/"/>
+    <id>http://vijay.top/2021/05/11/MarkDown%E8%AF%AD%E6%B3%95/</id>
     <published>2021-05-11T12:12:27.000Z</published>
     <updated>2021-05-12T07:03:59.853Z</updated>
     
@@ -131,17 +131,17 @@
     
     
     
-    <category term="学习" scheme="https://github.com/ZhangWeijie-Z/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="http://vijay.top/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="MarkDown" scheme="https://github.com/ZhangWeijie-Z/tags/MarkDown/"/>
+    <category term="MarkDown" scheme="http://vijay.top/tags/MarkDown/"/>
     
   </entry>
   
   <entry>
     <title>使用Hexo搭建博客</title>
-    <link href="https://github.com/ZhangWeijie-Z/2021/05/10/Hello-World-0/"/>
-    <id>https://github.com/ZhangWeijie-Z/2021/05/10/Hello-World-0/</id>
+    <link href="http://vijay.top/2021/05/10/Hello-World-0/"/>
+    <id>http://vijay.top/2021/05/10/Hello-World-0/</id>
     <published>2021-05-10T11:38:20.000Z</published>
     <updated>2022-03-16T07:16:40.085Z</updated>
     
@@ -161,19 +161,19 @@
     
     
     
-    <category term="学习" scheme="https://github.com/ZhangWeijie-Z/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="http://vijay.top/categories/%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="前端" scheme="https://github.com/ZhangWeijie-Z/categories/%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="http://vijay.top/categories/%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="Hexo" scheme="https://github.com/ZhangWeijie-Z/tags/Hexo/"/>
+    <category term="Hexo" scheme="http://vijay.top/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="https://github.com/ZhangWeijie-Z/2021/05/10/hello-world/"/>
-    <id>https://github.com/ZhangWeijie-Z/2021/05/10/hello-world/</id>
+    <link href="http://vijay.top/2021/05/10/hello-world/"/>
+    <id>http://vijay.top/2021/05/10/hello-world/</id>
     <published>2021-05-10T11:35:27.043Z</published>
     <updated>2021-05-11T23:47:43.881Z</updated>
     
