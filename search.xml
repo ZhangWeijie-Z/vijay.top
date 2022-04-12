@@ -393,4 +393,27 @@
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
   </entry>
+  <entry>
+    <title>前端import自动引入插件</title>
+    <url>/2021/07/01/04_%E8%87%AA%E5%8A%A8%E5%BC%95%E5%85%A5%E6%8F%92%E4%BB%B6/</url>
+    <content><![CDATA[<h2 id="插件地址"><a href="#插件地址" class="headerlink" title="插件地址"></a>插件地址</h2><p><code>https://github.com/antfu/unplugin-auto-import</code></p>
+<p><strong>该插件是fu大神制作，知名度可想而知</strong></p>
+<h2 id="下载插件"><a href="#下载插件" class="headerlink" title="下载插件"></a>下载插件</h2><span id="more"></span>
+
+<p><code>npm i -D unplugin-auto-import</code></p>
+<h2 id="引入"><a href="#引入" class="headerlink" title="引入"></a>引入</h2><h3 id="Vite"><a href="#Vite" class="headerlink" title="Vite"></a>Vite</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// vite.config.ts</span></span><br><span class="line"><span class="keyword">import</span> AutoImport <span class="keyword">from</span> <span class="string">&#x27;unplugin-auto-import/vite&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> defineConfig(&#123;</span><br><span class="line">  <span class="attr">plugins</span>: [</span><br><span class="line">    AutoImport(&#123; </span><br><span class="line">      <span class="attr">imports</span>: [<span class="string">&#x27;vue&#x27;</span>],</span><br><span class="line">      <span class="attr">dts</span>: <span class="string">&#x27;src/auto-import.d.ts&#x27;</span>,</span><br><span class="line">    &#125;),</span><br><span class="line">  ],</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h3 id="Webpack"><a href="#Webpack" class="headerlink" title="Webpack"></a>Webpack</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// webpack.config.js</span></span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  <span class="comment">/* ... */</span></span><br><span class="line">  <span class="attr">plugins</span>: [</span><br><span class="line">    <span class="built_in">require</span>(<span class="string">&#x27;unplugin-auto-import/webpack&#x27;</span>)(&#123; <span class="comment">/* options */</span> &#125;),</span><br><span class="line">  ],</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Nuxt"><a href="#Nuxt" class="headerlink" title="Nuxt"></a>Nuxt</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// nuxt.config.js</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="attr">buildModules</span>: [</span><br><span class="line">    [<span class="string">&#x27;unplugin-auto-import/nuxt&#x27;</span>, &#123; <span class="comment">/* options */</span> &#125;],</span><br><span class="line">  ],</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Vue-CLi"><a href="#Vue-CLi" class="headerlink" title="Vue CLi"></a>Vue CLi</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// vue.config.js</span></span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  <span class="attr">configureWebpack</span>: &#123;</span><br><span class="line">    <span class="attr">plugins</span>: [</span><br><span class="line">      <span class="built_in">require</span>(<span class="string">&#x27;unplugin-auto-import/webpack&#x27;</span>)(&#123; <span class="comment">/* options */</span> &#125;),</span><br><span class="line">    ],</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>Vue3</tag>
+      </tags>
+  </entry>
 </search>
